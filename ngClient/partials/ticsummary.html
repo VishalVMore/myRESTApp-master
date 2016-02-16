@@ -1,0 +1,145 @@
+<!-- logo and back button tab -->
+
+<div class="modal-header">
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-default">
+    <div class="panel-heading" id="toppanel">
+        
+<a class="panel-brand pull-right" ><img src="images/GetGame.png" class="responsive-image" /> </a>
+            
+
+        <a ng-href="{{back.url}}"><button class="back btn btn-default pull-left"><span  class="glyphicon glyphicon-chevron-left pull-left" id="buttback"></span></button></a>
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+            
+</div> 
+<!-- logo and back button tab Ends-->
+
+<!-- Ticket summary view -->
+<div id="ticketSum">
+
+<h1>Ticket Summary</h1>
+    <div>
+    <label>{{matchName}}<br/>
+         <label>{{stadiumName}}</label>
+    </label>
+        <div class="row">
+        <div class="col-xs-2">
+         <img src="images/clock118.png" class="img-responsive">
+            </div>
+            <div class="col-xs-10">
+            <label>{{eventTime | date:"MM/dd/yyyy 'at' h:mma"}}</label>
+            </div>
+        
+       
+        </div>
+        <div class="row">
+        <div class="col-xs-2">
+         <img src="images/profile14.png" class="img-responsive">
+            </div>
+            <div class="col-xs-10">
+                    <label>Quantity <br>{{seatCount}} Ticket(s)</label>
+            </div>
+        
+       
+        </div>
+        <div id="hr"></div>
+        <div class="row">
+        
+        <div class="col-xs-2">
+      <label>Total</label>
+    </div>
+    <div class="col-xs-10">
+      <label>Rs. {{SubTotal}}</label>
+    </div>
+        
+      
+        </div>
+        <!-- Ticket summary view Ends -->
+        
+        <!-- Billing Detail view Start -->
+       <h1>Billing Details</h1>   
+          <div class="row">
+        
+        <div class="col-xs-12">
+     <form>
+        <div class="form-group">
+            <input type="text" class="form-control" id="fullName" placeholder="Full Name" ng-model="customer.FirstName" ng-change="change(customer.FirstName)">
+              <label id="fname" style="color:red;"></label>
+        </div>
+       
+          <div class="form-group">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="customer.Email" ng-change="change(customer.Email)">
+              <label id="mail" style="color:red;"></label>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" id="mobileNum" placeholder="Mobile Number" ng-model="customer.Phone" ng-change="change(customer.Phone)">
+            <label id="mob" style="color:red;"></label>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="address" placeholder="Address" ng-model="customer.Address" ng-change="change(customer.Address)">
+            <label id="add" style="color:red;"></label>
+        </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="PIN" placeholder="PIN" ng-model="customer.Postcode" ng-change="change(customer.Postcode)">
+            <label id="Postcode" style="color:red;"></label>
+        </div>
+        
+          <label for="state">SELECT PAYMENT</label>
+          <div class="row">
+            
+             <div class="col-xs-12 text-center">
+                <!-- <button class="btn btn-warnin" type="button"><img src="images/payu_payment_methods_copy-48.png"></button>-->
+              <span class="input-group-btn">
+                        <button class="btn btn-default " type="submit"><img src="images/PayU.png" class="img-responsive paypal"></button>
+                        
+              </span>
+        </div>
+           
+          </div>
+           <div id="paymentd">
+             <div class="row">
+        
+        <div class="col-xs-6">
+     <label>Total</label> 
+    </div>
+    <div class="col-xs-6">
+         <label>Rs. {{SubTotal}} </label> 
+     
+    </div>
+        
+      
+        </div>
+                <div class="row">
+             <div class="col-xs-12 text-center">
+             
+                   <button class="btn btn-danger" type="button" ng-click="custvalidation(customer)">MAKE PAYMENT</button>
+
+                </div>
+               </div>
+           
+          </div>
+          
+        
+    </form>
+   
+   
+            
+    </div>
+        
+        
+        </div>
+        
+        <br>
+        <div id="hr"></div>
+        
+       </div>
+    </div>
+<!-- Billing Detail view Ends -->
+

@@ -1,0 +1,65 @@
+<!-- logo and back button tab starts -->
+
+<div class="modal-header">
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-default">
+    <div class="panel-heading" id="toppanel">
+        
+<a class="panel-brand pull-right" ><img src="images/GetGame.png" class="responsive-image" /> </a>
+            
+
+        <a ng-href="{{back.url}}"><button class="back btn btn-default pull-left"><span  class="glyphicon glyphicon-chevron-left pull-left" id="buttback"></span></button></a>
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+            
+</div> 
+<!-- logo and back button tab Ends -->
+
+<!-- Ticket booking View -->
+<div ng-repeat="stands in stand" class="standdiv">
+    <div class="standcolor">
+<div class="row">
+    <div class="col-xs-9">
+           <label>Category:&nbsp;{{stands.SeatCat}}</label>
+          </div>
+    <!--Selecting multiple seats and setting id according to seat_cat_id-->
+    <div class="col-xs-3">
+        <select  ng-model="stands.seatCount" ng-options="i for i in range" class="noOfSeats" ng-change="hideseat(stands)">
+            
+            <option value="" selected="selected" >Seats</option>
+           
+        </select>
+       
+        
+    </div>
+    </div>
+        <div class="row">
+        
+        <div class="col-xs-6">
+            </div>
+            <div class="col-xs-6">
+             <label id="{{stands.SeatCat}}" class="selectSeat"></label>
+            </div>
+    
+        </div>
+    <br />
+    
+<div class="row">
+    <div class="col-xs-9">
+       <label ng-model="obj.price">Price:&nbsp;{{price}}</label>
+    </div>
+    <div class="col-xs-3 align-right">
+        
+      <button type="button" class="btn btn-primary" ng-click="TicketSummary(stands)" id="{{stands.attribute_id}}">BUY</button>
+    </div>
+</div>
+    </div>
+    <br>
+</div>
+<!-- Ticket booking View Ends -->

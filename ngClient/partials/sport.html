@@ -1,0 +1,45 @@
+<!-- logo and back button tab -->
+<div class="modal-header">
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-default">
+    <div class="panel-heading" id="toppanel">
+        
+<a class="panel-brand pull-right" ><img src="images/GetGame.png" class="responsive-image" /> </a>
+            
+
+        <a ng-href="{{back.url}}"><button class="back btn btn-default pull-left"><span  class="glyphicon glyphicon-chevron-left pull-left" id="buttback"></span></button></a>
+        <div class="clearfix"></div>
+        
+    </div>
+    <img src="images/7476-BB-Thumbnail2.jpg" class="responsive-image" id="sportimag"></img>
+    
+</div>
+
+</div>
+</div>
+</div>
+<!-- logo and back button tab ends -->
+
+<!-- Sport View -->
+<div class="upcomingEvt ">
+    <div class="row">
+    <div class="col-sm-12">
+<div ng-repeat="events in event | limitTo: paginationLimit()" class="rowclass">
+<!--<div><img ng-src="{{events.image}}" alt="Smiley face"></div>-->
+    <div>{{events.name}}</div>
+    <div>{{events.stadiumname}}</div>
+    <div>{{events.eventtime | date:"MM/dd/yyyy 'at' h:mma"}}</div>
+    
+    <div><button ng-click="BookNow(events)" class="btn btn-default">BOOK NOW</button></div>
+    
+    
+</div>
+<div class="pagination pagination-centered">
+    <button class="btn btn-info" ng-show="hasMoreItemsToShow()" ng-click="showMoreItems()">Show more</button>
+
+</div>
+</div>
+</div>
+</div>
+<!--Sport View End-->

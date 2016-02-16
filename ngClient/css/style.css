@@ -1,0 +1,108 @@
+
+/*
+#profile .navbar-header .navbar-brand{
+    
+    padding: 10px;
+}
+#profile .navbar-header .navbar-brand img{
+    text-align: center;
+    width: 170px !important;
+    
+   }
+#profile .navbar-header .navbar-toggle{
+    background-color: red;
+    
+}
+*/
+.upcomingEvt{
+    text-align: center;
+}
+
+#toppanel .panel-brand img{
+   width: 162px;
+   height: 34px;
+   margin-right: 10px;
+}
+#toppanel .btn-default{
+   /* background-color: #fff; 
+    border-color: #ccc; */
+/*    background-color: */
+}
+.rowclass:nth-of-type(even){
+    background:red;
+    color:white;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #73AD21;
+    margin-left:5px;
+    margin-right: 5px;
+    
+}
+
+.rowclass:nth-of-type(odd){
+    background: #696969;
+    color:white;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #73AD21;
+    margin-left:5px;
+    margin-right: 5px;
+}
+.standdiv:nth-of-type(even){
+    background:#F5F5F5;
+    color:black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #73AD21;
+    margin-left:5px;
+    margin-right: 5px;
+    
+}
+
+.standdiv:nth-of-type(odd){
+    background: #F5F5F5;
+    color:black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #73AD21;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+.paypal{
+    width: 40px;
+    height: 30px;
+}
+.payu{
+    width: 40px;
+    height: 30px;
+}
+#ticketSum{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.selectSeat{
+    color: red;
+    padding-left: 33px;
+   
+}
+.modal-footer {  
+    border-top: 0px; 
+}
+#sportimag{
+    width: 100%;
+    height: 160px;
+}
